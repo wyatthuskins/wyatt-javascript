@@ -490,7 +490,11 @@
 </table>
 <script>
   $(document).ready(function() {
-    $('#example').DataTable();
+    $('#example').DataTable( {
+        "scrollY":        "200px",
+        "scrollCollapse": true,
+        "paging":         false
+    } );
 } );
 </script>
 </body>

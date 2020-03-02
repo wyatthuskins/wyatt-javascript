@@ -60,7 +60,66 @@
     let nameReturn = makeName("Jordan", "Wyatt", "Huskins");
 
     console.log(nameReturn.toUpperCase())
-      
+
+    console.log("Making better name function");
+
+    // Make a name with middle initial
+    function makeBetterName(fName, mName, lName) {
+      if (mName.length === 1) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+
+    console.log(makeBetterName("John", "F", "Kennedy"));
+
+    // Make a name with middle initial
+    function makeBetterName(fName, mName, lName) {
+      if (mName.length === 1) {
+        // adding and updating here
+        mName = mName + ".";
+        return mName;
+      } else {
+        return false;
+      }
+    }
+
+    console.log(makeBetterName("John", "F", "Kennedy"));
+
+    
+    // Make a name with middle initial
+    function makeBetterName(fName, mName, lName) {
+      if (mName.length === 1) {
+        mName = mName + ".";
+        // adding and updating
+        let fullName = fName + " " + mName + " " + lName;
+        return fullName;
+      } else {
+        // modifications here
+        let fullName = fName + " " + mName + " " + lName;
+        return fullName;
+      }
+    }
+    
+    // Flow control functions on my own
+    function winningTeam(homeScore, awayScore) {
+      if (homeScore > awayScore) {
+        return "The home team won";
+      } else if (homeScore === awayScore) {
+        return "It's a tie"
+      } else {
+        return "The away team won";
+      }
+    }
+
+    console.log(winningTeam("4", "3"));
+    console.log(winningTeam("3", "4"));
+    console.log(winningTeam("3", "3"));
+
+    
     </script>
 </body>
 </html>
