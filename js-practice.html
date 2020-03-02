@@ -32,7 +32,35 @@
 
     //Strings on my own
     let greeting = 'My name is ' + name;
-    console.log(greeting);  
+    console.log(greeting);
+
+    console.log("Using functions:");
+
+    // function to make square numbers
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+    console.log(makeSquare(21));
+
+    let try01 = makeSquare(21);
+    console.log(try01);
+
+    // Functions on my own
+    function makeName(fName, mName, lName) {
+      let myName = fName + ' ' + mName + ' ' + lName;
+      return myName;
+    }
+      console.log(makeName('Jordan', 'Wyatt', 'Huskins'));
+
+      console.log(makeName('Robert', '"Beto"', "O'Rourke"));
+
+    console.log(name.length)
+
+    let nameReturn = makeName("Jordan", "Wyatt", "Huskins");
+
+    console.log(nameReturn.toUpperCase())
+      
     </script>
 </body>
 </html>
